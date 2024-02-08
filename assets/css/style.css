@@ -1,0 +1,157 @@
+:root {
+    --color-neutral-1:#0d1117;
+    --color-neutral-2: #161b22;
+    --color-neutral-3: #21262d;
+    --color-neutral-4: #30363d;
+    --color-neutral-5: #8b949e;
+    --color-neutral-6: #c9d1d9;
+    --color-neutral-7: #ffffff;
+
+    --color-link: #2f81e6de;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-link);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: var(--color-neutral-1);
+    color: var(--color-neutral-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    padding: 32px 0px 24px 0px;
+}
+
+#logo {
+    width: 48px;
+    height: 46px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#title {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--color-neutral-2);
+    border-radius: 6px;
+    padding: 16px;
+    border: 1px solid var(--color-neutral-3);
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-field div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-field label {
+    font-weight: 400;
+}
+
+#forgot_password:hover {
+    text-decoration: none;
+}
+
+.form-control {
+    all: unset;
+    padding: 5px 12px;
+    line-height: 20px;
+    color: var(--color-neutral-6);
+    background-color: var(--color-neutral-1);
+    border: 1px solid var(--color-neutral-4);
+    border-radius: 6px;
+}
+
+.form-control:focus-visible {
+    border-color: var(--color-link);
+}
+
+.form-control:-webkit-autofill {
+    box-shadow: inset 0 0 0 32px var(--color-neutral-1) !important;
+    -webkit-text-fill-color: var(--color-neutral-6);
+}
+
+#submit_button {
+    background-color: #238636;
+    color: var(--color-neutral-7);
+    border: 1px solid rgba(240, 246, 252, 0.1);
+    display: inline-block;
+    padding: 5px 16px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 80ms;
+}
+
+#submit_butto:hover {
+    background-color: #2ea043;
+}
+
+#login_callout {
+    padding: 16px 44px;
+    border: 1px solid var(--color-neutral-4);
+    border-radius: 6px;
+    text-align: center;
+}
+
+#login_callout a {
+    font-size: 14px;
+}
+
+#passkey {
+    font-weight: bold;
+}
+
+footer {
+    padding: 80px;
+}
+
+footer ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+footer ul li a {
+    color: var(--color-neutral-5);
+}
+
+footer ul li a:hover {
+    color: var(--color-link);
+}
